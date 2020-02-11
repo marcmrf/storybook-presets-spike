@@ -1,5 +1,15 @@
 {
-	"enabled": true,
 	"lockFileMaintenance": { "enabled": true, "schedule": ["at any time"] },
-	"schedule": ["at any time"]
+	"schedule": ["at any time"],
+	"enabled": false,
+	"labels": ["dependencies"],
+	"packageRules": [
+		{
+			"packagePatterns": ["^@marfeel"],
+			"enabled": true,
+			"updateTypes": ["minor", "patch", "pin", "digest"],
+			"automerge": true,
+			"rangeStrategy": "update-lockfile"
+		}
+	]
 }
