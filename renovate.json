@@ -1,11 +1,10 @@
 {
 	"lockFileMaintenance": { "enabled": true, "schedule": ["at any time"] },
 	"schedule": ["at any time"],
-	"enabled": false,
+	"enabled": true,
 	"labels": ["dependencies"],
 	"packageRules": [
 		{
-			"packagePatterns": ["^@marfeel"],
 			"enabled": true,
 			"updateTypes": ["minor", "patch", "pin", "digest"],
 			"automerge": true,
